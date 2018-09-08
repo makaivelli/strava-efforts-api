@@ -1,0 +1,16 @@
+service: strava-efforts-api
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: dev
+
+functions:
+  notify:
+    description: Receives webhooks from Strava on creating an effort
+    handler: notify.run
+    events:
+      - http:
+          path: notify
+          method: post
+
