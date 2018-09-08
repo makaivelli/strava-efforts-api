@@ -1,6 +1,9 @@
 # framework
 .serverless/
 
+# secrets
+env/
+
 # IDE
 .idea
 *.iml
