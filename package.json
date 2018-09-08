@@ -1,0 +1,25 @@
+{
+  "name": "strava-efforts-api",
+  "version": "1.0.0",
+  "description": "A serverless infrastructure to visualise my efforts logged by Strava while I'm cycling to raise money for Cancer Research UK.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/makaivelli/strava-efforts-api.git"
+  },
+  "keywords": [
+    "strava",
+    "serverless",
+    "nodejs",
+    "webhooks"
+  ],
+  "author": "Adam Makai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/makaivelli/strava-efforts-api/issues"
+  },
+  "homepage": "https://github.com/makaivelli/strava-efforts-api#readme"
+}
