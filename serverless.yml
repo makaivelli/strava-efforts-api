@@ -4,6 +4,8 @@ provider:
   name: aws
   runtime: nodejs8.10
   stage: dev
+  environment:
+    STRAVA_VERIFY_TOKEN: ${file(./env/secrets.json):STRAVA_VERIFY_TOKEN}
 
 functions:
   notify:
@@ -13,4 +15,10 @@ functions:
       - http:
           path: notify
           method: post
-
+  notifyVerify:
+    description: One-off function to verify Strava webhook subscription
+    handler: notify.verify
+    events:
+      - http:
+          path: notify
+          method: get
